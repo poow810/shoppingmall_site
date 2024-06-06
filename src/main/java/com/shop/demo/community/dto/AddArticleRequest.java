@@ -1,6 +1,7 @@
 package com.shop.demo.community.dto;
 
 
+
 import com.shop.demo.community.domain.Article;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +14,6 @@ public class AddArticleRequest {
 
     private String title;
     private String content;
-
     public Article toEntity()  {
         return Article.builder()
                 .title(title)
